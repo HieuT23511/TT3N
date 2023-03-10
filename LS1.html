@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 1</title>
+</head>
+<body>
+<input type="text" id="inputA"> <br>
+<input type="text" id="inputB"> <br>
+<button type="button" onclick="summary()">Summary</button>
+<br>
+<h2 id="summaryResult"></h2>
+<script>
+    function summary() {
+        let inputA = +document.getElementById('inputA').value;
+        let inputB = +document.getElementById('inputB').value;
+        let summary = inputA + inputB;
+        if (summary < 4) {
+            document.getElementById('summaryResult').innerHTML ='Below';
+        }
+        else {
+            document.getElementById('summaryResult').innerHTML ='Over'
+        }
+    }
+</script>
+</body>
+</html>
