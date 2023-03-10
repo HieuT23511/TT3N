@@ -5,23 +5,27 @@
     <title>Lesson 1</title>
 </head>
 <body>
-<input type="text" id="inputA"> <br>
-<input type="text" id="inputB"> <br>
-<button type="button" onclick="summary()">Summary</button>
+<!--<input type="text" id="inputA"> <br>-->
+<!--<input type="text" id="inputB"> <br>-->
+<!--<button type="button" onclick="summary()">Summary</button>-->
 <br>
 <h2 id="summaryResult"></h2>
 <script>
-    function summary() {
-        let inputA = +document.getElementById('inputA').value;
-        let inputB = +document.getElementById('inputB').value;
-        let summary = inputA + inputB;
-        if (summary < 4) {
-            document.getElementById('summaryResult').innerHTML ='Below';
-        }
-        else {
-            document.getElementById('summaryResult').innerHTML ='Over'
-        }
-    }
+    // function summary() {
+    //     let inputA = +document.getElementById('inputA').value;
+    //     let inputB = +document.getElementById('inputB').value;
+    //     let summary = inputA + inputB;
+    //     if (summary < 4) {
+    //         document.getElementById('summaryResult').innerHTML ='Below';
+    //     }
+    //     else {
+    //         document.getElementById('summaryResult').innerHTML ='Over'
+    //     }
+    // }
+    let a = +prompt("a: ");
+    let b = +prompt("b: ");
+    result = (a + b < 4) ? 'Below' : 'Over';
+    document.write(result);
 </script>
 </body>
 </html>
